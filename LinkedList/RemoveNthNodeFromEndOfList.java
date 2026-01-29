@@ -17,8 +17,8 @@ class Solution {
         }
         // vị trí node cần xóa tính từ 0
         int place = size - n;
-        // duyệt tới trc node cần xóa
-        for(int i = 1; i < place; i++) {
+        // duyệt tới trước node cần xóa
+        for(int i = 0; i < place - 1; i++) {
             prev = prev.next;
         }
 

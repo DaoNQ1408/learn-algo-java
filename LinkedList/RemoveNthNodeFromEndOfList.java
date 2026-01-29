@@ -18,19 +18,15 @@ class Solution {
         // vị trí node cần xóa tính từ 0
         int place = size - n;
         // duyệt tới trc node cần xóa
-        for(int i = 0; i < place - 1; i++) {
+        for(int i = 1; i < place; i++) {
             prev = prev.next;
         }
 
         ListNode delete = prev.next;
         // xóa node
-        if(delete == null || delete.next == null) {
-            prev.next = null;
-        } else {
+        if(prev != null) {
             prev.next = delete.next;
-            delete.next = null;
         }
-
 
         return head;
     }

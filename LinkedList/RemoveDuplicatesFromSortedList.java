@@ -3,11 +3,11 @@ class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         // dùng curr và nextt để check value = nhau hay không ?
         ListNode curr = head;
-
+        // nếu curr là null hoặc là node duy nhất thì return
         if(curr == null || curr.next == null) {
             return head;
         }
-
+        // sau đó mới tạo curr
         ListNode nextt = curr.next;
 
         do {

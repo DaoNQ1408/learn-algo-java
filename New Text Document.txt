@@ -1,0 +1,1 @@
+dung StringBuilder có tốc do nhanh hơn nhiều so với string
